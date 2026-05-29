@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PlayerCollision : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
     int contador = 0;
+    int tiempo = 0;
 
     // Referencia al texto UI
     public TextMeshProUGUI textoContador;
 
+
     void Start()
     {
         textoContador.text = "Objetos: 0";
+
     }
 
     private void OnTriggerEnter(Collider other)
