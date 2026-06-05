@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine;
 using TMPro;
 
-public class Temporizador : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public float tiempoRestante = 60f;
 

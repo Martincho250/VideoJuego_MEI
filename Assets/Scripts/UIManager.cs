@@ -6,7 +6,6 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     int contador = 0;
-    int tiempo = 0;
 
     // Referencia al texto UI
     public TextMeshProUGUI textoContador;
