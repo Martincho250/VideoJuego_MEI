@@ -7,8 +7,9 @@ public class UIManager : MonoBehaviour
 {
     int contador = 0;
 
-    // Referencia al texto UI
     public TextMeshProUGUI textoContador;
+    public int objetivo = 1;
+    public GameManager gameManager;
 
 
     void Start()
@@ -29,6 +30,10 @@ public class UIManager : MonoBehaviour
             Debug.Log("Objetos recolectados: " + contador);
 
             Destroy(other.gameObject);
+            if (contador >= objetivo)
+            {
+                gameManager.Ganar();
+            }
         }
     }
 }
