@@ -2,38 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     int contador = 0;
 
-    public TextMeshProUGUI textoContador;
-    public int objetivo = 1;
+    public TextMeshProUGUI textoCronometro;
+    public TextMeshProUGUI textoPuntos;
+    public TextMeshProUGUI textoVictoria;
+    public TextMeshProUGUI textoDerrota;
+    public TextMeshProUGUI textoSub
+    public GameObject panelVictoria;
+    public GameObject panelDerrota
     public GameManager gameManager;
 
 
     void Start()
     {
-        textoContador.text = "Objetos: 0";
-
+        gameManager = FindObjectOfType<GameManager>();
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Coleccionable"))
-        {
-            contador++;
-
-            // Actualiza el texto
-            textoContador.text = "Objetos: " + contador;
-
-            Debug.Log("Objetos recolectados: " + contador);
-
-            Destroy(other.gameObject);
-            if (contador >= objetivo)
-            {
-                gameManager.Ganar();
-            }
+    public void UpdateTimer (float tiempo)
+    { 
+        textoCronometro.text = tiempo.ToString("F2");
+    }
+    public void MostrarDerrota(){ 
+        textoPuntos.text = "";
+        gameManager.jugando = false;
+        Time.timeScale = 0;
+        panelDerrota.SetActive(true);
+    }
+    public void UpdateScore(int Objetos){
+        if(score < 10)
+        textoPuntos.text = "Objetos:" + Objetos;
+        else { 
+            textoPuntos.text = "";
+            gameManager.jugando = false
+            Time.timeScale = 0;
+            panelVictoria.SetActive(true);
         }
-    }
+     }
+
 }

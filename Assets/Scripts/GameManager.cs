@@ -13,13 +13,23 @@ public class GameManager : MonoBehaviour
     bool tiempoActivo = true;
     public GameObject panelVictoria;
     public GameObject panelDerrota;
-    public GameManager gameManager;
+    public UIManager contador;
 
+
+ 
+    void Start()
+    {
+    Time.timeScale = 1f;
+    }
+    public void Reiniciar()
+    {
+    Time.timeScale = 1f;
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
     void Update()
     {
-           if (Input.GetKeyDown(KeyCode.R))
-    {
+           if (Input.GetKeyDown(KeyCode.R)){
         Reiniciar();
     }
         if (tiempoActivo)
@@ -32,33 +42,20 @@ public class GameManager : MonoBehaviour
             {
                 tiempoRestante = 0;
                 tiempoActivo = false;
-                gameManager.Perder();
-                Debug.Log("Tiempo terminado");
+                if (contador >= 1)
+            {
+            panelVictoria.SetActive(true);
+            Time.timeScale = 0f;
+            }
+            else{ 
+            panelDerrota.SetActive(true);
+            Time.timeScale = 0f;
+            }
             }
 
             // Actualiza texto
             textoTiempo.text = "Tiempo: " + Mathf.Ceil(tiempoRestante);
         }
     }
-      public void Ganar()
-    {
-        panelVictoria.SetActive(true);
-        Time.timeScale = 0f;
-    }
-
-    public void Perder()
-    {
-        panelDerrota.SetActive(true);
-        Time.timeScale = 0f;
-    }
-    void Start()
-    {
-    Time.timeScale = 1f;
-    }
-    public void Reiniciar()
-    {
-    Time.timeScale = 1f;
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
+ 
 }
