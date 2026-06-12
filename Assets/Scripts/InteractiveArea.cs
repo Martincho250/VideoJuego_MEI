@@ -21,7 +21,7 @@ public class InteractiveArea : MonoBehaviour
             contador++;
 
             // Actualiza el texto
-            uiManager.UpdateScore(contador);
+            uiManager.UpdateObjects(contador);
 
             Debug.Log("Objetos recolectados: " + contador);
 

@@ -12,9 +12,9 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI textoPuntos;
     public TextMeshProUGUI textoVictoria;
     public TextMeshProUGUI textoDerrota;
-    public TextMeshProUGUI textoSub
+    public TextMeshProUGUI textoSub;
     public GameObject panelVictoria;
-    public GameObject panelDerrota
+    public GameObject panelDerrota;
     public GameManager gameManager;
 
 
@@ -26,18 +26,20 @@ public class UIManager : MonoBehaviour
     { 
         textoCronometro.text = tiempo.ToString("F2");
     }
-    public void MostrarDerrota(){ 
+    public void Derrota(){ 
         textoPuntos.text = "";
         gameManager.jugando = false;
         Time.timeScale = 0;
         panelDerrota.SetActive(true);
     }
-    public void UpdateScore(int Objetos){
-        if(score < 10)
+    public void UpdateObjects(int Objetos){
+        if(Objetos < 10)
+        {
         textoPuntos.text = "Objetos:" + Objetos;
+        }
         else { 
             textoPuntos.text = "";
-            gameManager.jugando = false
+            gameManager.jugando = false;
             Time.timeScale = 0;
             panelVictoria.SetActive(true);
         }

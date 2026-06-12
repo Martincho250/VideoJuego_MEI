@@ -6,32 +6,34 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float tiempoRestante = 60f;
-
-    public TextMeshProUGUI textoTiempo;
-
-    bool tiempoActivo = true;
-    public GameObject panelVictoria;
-    public GameObject panelDerrota;
-    public UIManager contador;
-
-
- 
+    private float tiempoRestante = 60f;
+    public bool jugando = true;
+    public bool tiempoActivo = true;
+    public UIManager uiManager;
+    
+    
+    public void pararTiempo()
+    {
+        tiempoActivo = false;
+        Time.timeScale = 0f;
+    }
+      public void Reiniciar()
+    {
+    Time.timeScale = 1f;
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    
     void Start()
     {
     Time.timeScale = 1f;
+    jugando = true;
+    uiManager = FindObjectOfType<UIManager>();
     }
-    public void Reiniciar()
-    {
-    Time.timeScale = 1f;
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
     void Update()
     {
-           if (Input.GetKeyDown(KeyCode.R)){
-        Reiniciar();
-    }
+        if (Input.GetKeyDown(KeyCode.R)){
+        Reiniciar(); 
+        }
         if (tiempoActivo)
         {
  
@@ -42,20 +44,11 @@ public class GameManager : MonoBehaviour
             {
                 tiempoRestante = 0;
                 tiempoActivo = false;
-                if (contador >= 1)
-            {
-            panelVictoria.SetActive(true);
-            Time.timeScale = 0f;
-            }
-            else{ 
-            panelDerrota.SetActive(true);
-            Time.timeScale = 0f;
-            }
+                uiManager.Derrota();
             }
 
-            // Actualiza texto
-            textoTiempo.text = "Tiempo: " + Mathf.Ceil(tiempoRestante);
         }
+        uiManager.UpdateTimer(tiempoRestante);
     }
- 
+
 }
