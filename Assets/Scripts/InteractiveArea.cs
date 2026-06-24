@@ -5,7 +5,7 @@ using TMPro;
 
 public class InteractiveArea : MonoBehaviour
 {
-    int contador = 0;
+    int Objetos = 0;
     private UIManager uiManager;
     // Start is called before the first frame update
     void Start()
@@ -18,12 +18,12 @@ public class InteractiveArea : MonoBehaviour
     {
         if (other.CompareTag("Coleccionable"))
         {
-            contador++;
+            Objetos++;
 
             // Actualiza el texto
-            uiManager.UpdateObjects(contador);
+            uiManager.UpdateObjects(Objetos);
 
-            Debug.Log("Objetos recolectados: " + contador);
+            Debug.Log("Objetos recolectados: " + Objetos);
 
             Destroy(other.gameObject);
            
