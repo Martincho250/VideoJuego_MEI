@@ -1,15 +1,42 @@
 fileFormatVersion: 2
-guid: 9a351d1bdb070d24e91be2d7957eb737
+guid: 3b7825f6e5d2ed541a92b5b375cf9bbb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Madera
-    2100002: Metal_Negro
-    2300000: //RootNode
-    3300000: //RootNode
+    100000: Cube
+    100002: Cube.001
+    100004: Cube.002
+    100006: Cylinder.001
+    100008: Cylinder.002
+    100010: //RootNode
+    400000: Cube
+    400002: Cube.001
+    400004: Cube.002
+    400006: Cylinder.001
+    400008: Cylinder.002
+    400010: //RootNode
+    2100000: Material.002
+    2100002: VERDE AGUA
+    2100004: blanco.001
+    2100006: azul
+    2100008: blanco.002
+    2100010: rojo.003
+    2100012: Blanquito
+    2300000: Cube
+    2300002: Cube.001
+    2300004: Cube.002
+    2300006: Cylinder.001
+    2300008: Cylinder.002
+    3300000: Cube
+    3300002: Cube.001
+    3300004: Cube.002
+    3300006: Cylinder.001
+    3300008: Cylinder.002
     4300000: Cube
+    4300002: Cube.001
+    4300004: Cube.002
+    4300006: Cylinder.001
+    4300008: Cylinder.002
   externalObjects: {}
   materials:
     importMaterials: 1
