@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e52874cfb0012c7409f6eb6a585b0e66
+guid: 18aba24d2141ca44b8d3e40115693f97
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -13,7 +13,32 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Plane.018
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 13ba0efdad0cd4045b4cbecb29c5762c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: bcd524083ba065c48bac855292bc7e21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 19087947245bf2342abc425c711f7240, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paredes
+    second: {fileID: 2100000, guid: 69fa853e0f6378c4cb767659f7e7bfbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Piso
+    second: {fileID: 2100000, guid: c8e3d36eaf09dec468c64c680718b8eb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

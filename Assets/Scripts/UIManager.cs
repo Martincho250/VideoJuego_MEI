@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
         panelDerrota.SetActive(true);
     }
     public void UpdateObjects(int Objetos){
-        if(Objetos < 1)
+        if(Objetos < 5)
         {
         textoPuntos.text = "Objetos:" + Objetos;
         }
