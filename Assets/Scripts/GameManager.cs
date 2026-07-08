@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private float tiempoRestante = 30f;
+    private float tiempoRestante = 60f;
     public bool jugando = true;
     public bool tiempoActivo = true;
     public UIManager uiManager;
