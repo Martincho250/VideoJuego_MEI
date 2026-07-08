@@ -38,7 +38,7 @@ public class UIManager : MonoBehaviour
         textoPuntos.text = "Objetos:" + Objetos;
         }
         else { 
-            textoPuntos.text = "";
+            textoPuntos.text = "Objetos:3";
             gameManager.jugando = false;
             Time.timeScale = 0;
             panelVictoria.SetActive(true);
