@@ -1520,7 +1520,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5402,7 +5402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1852129516
 Transform:
   m_ObjectHideFlags: 0
@@ -5801,6 +5801,14 @@ PrefabInstance:
     - target: {fileID: 400002, guid: 933fd9fc390ad5243b2985c3c9940510, type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 933fd9fc390ad5243b2985c3c9940510, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 933fd9fc390ad5243b2985c3c9940510, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 933fd9fc390ad5243b2985c3c9940510, type: 3}
