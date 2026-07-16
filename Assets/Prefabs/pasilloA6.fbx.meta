@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 933fd9fc390ad5243b2985c3c9940510
+guid: a033fd1540e38b741b7f30f160b694d5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Plane
-    100004: Plane.001
-    100006: Plane.002
-    100008: Plane.003
+    100000: Cube
+    100002: //RootNode
+    100004: Plane
+    100006: Plane.001
+    100008: Plane.002
     100010: Plane.004
     100012: Plane.005
     100014: Plane.006
@@ -31,14 +31,12 @@ ModelImporter:
     100050: Plane.024
     100052: Plane.025
     100054: Plane.026
-    100056: Plane.027
-    100058: Plane.028
-    100060: Plane.029
-    400000: //RootNode
-    400002: Plane
-    400004: Plane.001
-    400006: Plane.002
-    400008: Plane.003
+    100056: Plane.030
+    400000: Cube
+    400002: //RootNode
+    400004: Plane
+    400006: Plane.001
+    400008: Plane.002
     400010: Plane.004
     400012: Plane.005
     400014: Plane.006
@@ -62,19 +60,17 @@ ModelImporter:
     400050: Plane.024
     400052: Plane.025
     400054: Plane.026
-    400056: Plane.027
-    400058: Plane.028
-    400060: Plane.029
-    2100000: Material.003
-    2100002: Piso
-    2100004: Paredes
-    2100006: Material.001
-    2100008: Material.002
+    400056: Plane.030
+    2100000: Borde
+    2100002: Vidrio
+    2100004: Material.003
+    2100006: Piso
+    2100008: Paredes
     2100010: Puerta
-    2300000: Plane
-    2300002: Plane.001
-    2300004: Plane.002
-    2300006: Plane.003
+    2300000: Cube
+    2300002: Plane
+    2300004: Plane.001
+    2300006: Plane.002
     2300008: Plane.004
     2300010: Plane.005
     2300012: Plane.006
@@ -98,13 +94,11 @@ ModelImporter:
     2300048: Plane.024
     2300050: Plane.025
     2300052: Plane.026
-    2300054: Plane.027
-    2300056: Plane.028
-    2300058: Plane.029
-    3300000: Plane
-    3300002: Plane.001
-    3300004: Plane.002
-    3300006: Plane.003
+    2300054: Plane.030
+    3300000: Cube
+    3300002: Plane
+    3300004: Plane.001
+    3300006: Plane.002
     3300008: Plane.004
     3300010: Plane.005
     3300012: Plane.006
@@ -128,13 +122,11 @@ ModelImporter:
     3300048: Plane.024
     3300050: Plane.025
     3300052: Plane.026
-    3300054: Plane.027
-    3300056: Plane.028
-    3300058: Plane.029
-    4300000: Plane
-    4300002: Plane.001
-    4300004: Plane.002
-    4300006: Plane.003
+    3300054: Plane.030
+    4300000: Cube
+    4300002: Plane
+    4300004: Plane.001
+    4300006: Plane.002
     4300008: Plane.004
     4300010: Plane.005
     4300012: Plane.006
@@ -158,40 +150,63 @@ ModelImporter:
     4300048: Plane.024
     4300050: Plane.025
     4300052: Plane.026
-    4300054: Plane.027
-    4300056: Plane.028
-    4300058: Plane.029
+    4300054: Plane.030
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: abb7d481e23111b4395389165184e71a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 2075d6cc96e31cb48b45ade343f25709, type: 2}
+      name: Borde
+    second: {fileID: 2100000, guid: db6dc3f982ebf1e4d89b542e994cf4f1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.003
-    second: {fileID: 2100000, guid: 7d6854f90e3583946bb36c766eed41e0, type: 2}
+    second: {fileID: 2100000, guid: 98e65881caaeff648bd9a44fe2e272e0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Paredes
-    second: {fileID: 2100000, guid: c1384d2d1f434c045acc02cd915664f1, type: 2}
+    second: {fileID: 2100000, guid: 48d0987705c3f324fb7de32eb7bd8f0a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Piso
-    second: {fileID: 2100000, guid: 1de8490b92f16e14faa289d51cd23939, type: 2}
+    second: {fileID: 2100000, guid: 461b84ebd4d652c478d3279514557650, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Puerta
-    second: {fileID: 2100000, guid: 6fa63af8261b1a44aacedcfd99df65cb, type: 2}
+    second: {fileID: 2100000, guid: 34a44defb5f2859409db8d69c99d1839, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vidrio
+    second: {fileID: 2100000, guid: 2415bef0f0137c84d97f3b0bdba6e429, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image 8 jul 2026, 14_03_40
+    second: {fileID: 2800000, guid: 4226913f77aa59d46a72873938078719, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_OfficeCeiling_1K_albedo
+    second: {fileID: 2800000, guid: 192f53f8b5c66cd4ea0f273e13e31648, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: photo-1529405643518-5cf24fddfc0b-convertido-de-avif
+    second: {fileID: 2800000, guid: 560a6f06f9cc83d4e87a16c18eb1c4f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: txt_Ladrillo
+    second: {fileID: 2800000, guid: fafa87474350d7b458c68ba5291094f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: txt_Piso
+    second: {fileID: 2800000, guid: b914a7fb78ffb7d4992a455c74798565, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
